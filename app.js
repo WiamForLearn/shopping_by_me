@@ -22,6 +22,9 @@ categoryLists.forEach((cate) => {
 categoryPopup.addEventListener("click", () => {
   mobileCate.classList.toggle("active");
   categoryPopup.classList.toggle("active");
+  categoryLists.forEach((cate) => {
+    cate.children[1].classList.remove("active");
+  });
 });
 
 filterpopup.addEventListener("click", () => {
