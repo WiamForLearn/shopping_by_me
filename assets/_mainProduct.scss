@@ -200,7 +200,7 @@ main {
     position: fixed;
     left: 10px;
     bottom: 10px;
-    z-index: 5;
+    z-index: 7;
     i {
       width: 50px;
       height: 50px;
@@ -232,16 +232,16 @@ main {
     background: white;
     top: 0;
     height: 100%;
+    z-index: 7;
     left: -100%;
     transition: 0.3s;
   }
   main .filter-nav.active {
     left: 0;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-    z-index: 7;
   }
   .filter-popup.active {
-    z-index: 8;
+    z-index: 9;
   }
   .category-popup {
     display: block;

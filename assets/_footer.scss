@@ -1,0 +1,59 @@
+footer {
+  min-height: 10vh;
+
+  background: $background;
+  width: 100%;
+}
+.footerwrap {
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  a {
+    color: white;
+  }
+  @include flex(space-evenly, flex-start, row);
+  .contact {
+    @include flex(center, flex-start, column);
+    font-size: 1.2rem;
+    a {
+      margin: 0.5rem 0rem;
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+  .useful-link ul {
+    @include flex(center, flex-start, column);
+    font-size: 1.2rem;
+    li {
+      margin: 0.5rem;
+    }
+  }
+  .copy-right {
+    align-self: center;
+    justify-self: flex-end;
+    text-align: center;
+    h1 {
+      font-size: 1rem;
+    }
+  }
+}
+@media screen and (max-width: 779px) {
+  footer {
+    .footerwrap {
+      padding: 0;
+      padding-top: 1rem;
+      @include flex(center, center, column);
+      .contact,
+      .useful-link,
+      .copy-right {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
