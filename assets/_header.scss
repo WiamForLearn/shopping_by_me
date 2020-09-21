@@ -1,0 +1,405 @@
+.mobile-category {
+  display: none;
+}
+// ===================mobile menu=================
+.mobile-nav {
+  display: none;
+  position: relative;
+  .main-nav {
+    min-height: 5vh;
+    padding: 1vh;
+    background: $background;
+    width: 100%;
+    @include flex(center, center, row);
+    .mobile-menu {
+      overflow: hidden;
+      position: fixed;
+      background: $background;
+      height: 0px;
+      z-index: 6;
+      opacity: 0;
+      pointer-events: none;
+      top: 5vh;
+      padding: 5vh 0;
+      left: 0;
+      width: 100%;
+      transition: height 0.5s;
+
+      @include flex(flex-start, center, column);
+      .signup-section {
+        padding: 2rem;
+        width: 100%;
+        ul {
+          width: 100%;
+          font-size: 1.3rem;
+          @include flex(space-around, center, row);
+        }
+        border-bottom: 1px solid $subBackground;
+      }
+      .another-section {
+        height: 100%;
+        ul {
+          font-size: 1.3rem;
+          height: 100%;
+          @include flex(space-evenly, center, column);
+        }
+      }
+      a {
+        color: white;
+      }
+    }
+    #logo {
+      width: 125px;
+      z-index: 7;
+    }
+  }
+  .search-nav {
+    .search-bar {
+      cursor: pointer;
+      position: relative;
+      width: 100%;
+      margin-right: 3rem;
+    }
+    position: relative;
+    width: 100%;
+    background: $subBackground;
+    padding: 2vh;
+    @include flex(center, center, row);
+    input {
+      font-size: 1.2rem;
+      border: none;
+      height: 45px;
+      width: 100%;
+      padding: 0rem 1rem;
+      color: rgb(107, 107, 107);
+      &::placeholder {
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 0.24);
+      }
+    }
+    .fa-search {
+      position: Absolute;
+      right: -45px;
+      background: rgb(255, 255, 255);
+      text-align: Center;
+      line-height: 45px;
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
+
+.burger {
+  z-index: 7;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  right: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  @include flex(space-evenly, center, column);
+  .burger-line {
+    pointer-events: none;
+    content: "";
+    background: $subBackground;
+    width: 100%;
+    height: 5px;
+  }
+}
+.main-nav {
+  .mobile-menu.active {
+    height: 100vh;
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+.burger.active {
+  transform: rotate(360deg) rotateY(180deg);
+}
+.desktop-nav {
+  width: 100%;
+  z-index: 5;
+  position: relative;
+  @include flex(center, center, column);
+  #logo {
+    margin-right: 2rem;
+  }
+  .main-nav {
+    min-height: 2rem;
+    background: $background;
+    @include flex(space-between, center, row);
+    width: 100%;
+    a {
+      color: white;
+    }
+    ul {
+      @include flex(space-between, center, row);
+      li a {
+        margin: 0 1rem;
+        padding: 1rem 0.5rem;
+        font-size: 1rem;
+        &:hover {
+          background: $subBackground;
+        }
+      }
+    }
+  }
+  .search-nav {
+    .search-bar {
+      position: relative;
+      width: 550px;
+      margin-right: 3rem;
+    }
+    position: relative;
+    width: 100%;
+    background: $subBackground;
+    padding: 2vh;
+    @include flex(center, center, row);
+    input {
+      font-size: 1.2rem;
+      border: none;
+      height: 45px;
+      width: 100%;
+      padding: 0rem 1rem;
+      color: rgb(107, 107, 107);
+      &::placeholder {
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 0.24);
+      }
+    }
+    .fa-search {
+      position: Absolute;
+      cursor: pointer;
+      right: -45px;
+      background: rgb(255, 255, 255);
+      text-align: Center;
+      line-height: 45px;
+      width: 45px;
+      height: 45px;
+    }
+    .categoryDrop {
+      margin-left: 2rem;
+      padding: 1rem 3rem;
+      background: white;
+      cursor: pointer;
+      border-radius: 3px;
+      a {
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+#logo {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+
+  padding: 0.5rem 1.5rem;
+  border-top: 3px solid $border;
+  border-left: 3px solid $border;
+  border-right: 3px solid $border;
+
+  position: relative;
+  &::before {
+    height: 3px;
+    content: "";
+    background: $border;
+    width: 28%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  &::after {
+    height: 3px;
+    content: "";
+    background: $border;
+    width: 28%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  p {
+    font-size: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+  }
+}
+.category-dropdown {
+  position: Absolute;
+  z-index: -1;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  top: 10vh;
+  transform: translateY(-105%);
+  transition: 0.5s ease;
+  opacity: 1;
+  pointer-events: none;
+  background: white;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  .category-list {
+    @include flex(flex-start, flex-start, column);
+    margin: 1rem;
+    margin: 0 auto;
+    ul {
+      @include flex(flex-start, flex-start, column);
+
+      li {
+        padding: 0.5rem;
+      }
+      li a:hover {
+        color: black;
+      }
+    }
+    h5 {
+      font-size: 1.3rem;
+      position: relative;
+    }
+  }
+}
+.category-dropdown.active {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.search-nav .categoryDrop.active {
+  background: $background;
+  color: white;
+  a {
+    color: white;
+  }
+}
+.banner {
+  width: 100%;
+  min-height: 30vh;
+  padding: 3rem;
+  background: $bannerBackground;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: 20% repeat(3, 1fr) 20%;
+  grid-template-rows: repeat(3, 1fr);
+  .banner-text {
+    grid-column: 2/4;
+    grid-row: 1/4;
+    h1 {
+      font-size: 3rem;
+      position: relative;
+      color: $subBackground;
+    }
+    p {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      color: rgb(75, 74, 74);
+      font-size: 1.5rem;
+    }
+    a {
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background: $background;
+      transition: 0.5;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      &:hover {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1145px) {
+  .banner {
+    .banner-text {
+      grid-column: 2/5;
+    }
+  }
+  .desktop-nav {
+    .search-nav {
+      .search-bar {
+        width: 400px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 880px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    @include flex(center, center, column);
+  }
+}
+
+@media screen and(max-width:558px) {
+  .mobile-category.active {
+    transform: translateX(0);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    z-index: 8;
+  }
+  .category-popup.active {
+    z-index: 9;
+  }
+  .mobile-category {
+    display: block;
+    position: fixed;
+    transform: translateX(-100%);
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    background: white;
+    transition: 0.3s;
+    overflow: auto;
+    z-index: 6;
+    cursor: pointer;
+    .mobile-category-list {
+      @include flex(flex-start, flex-start, column);
+      position: relative;
+      margin: 1rem;
+      margin: 0 auto;
+      ul {
+        @include flex(flex-start, flex-start, column);
+        background: $subBackground;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        li {
+          padding: 0.5rem;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          padding: 1rem;
+          width: 100%;
+        }
+        li a:hover {
+          color: black;
+        }
+      }
+      h5 {
+        font-size: 1rem;
+        position: relative;
+        background: $background;
+        color: white;
+        width: 100%;
+        padding: 1rem 2rem;
+        i {
+          position: absolute;
+          right: 10px;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+  .mobile-category ul.active {
+    max-height: 100vh;
+    transition: max-height 1s;
+  }
+}

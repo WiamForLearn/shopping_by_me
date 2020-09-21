@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | shop Me</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- =============================Style=========================== -->
+    <link rel="stylesheet" href="./assets/style.min.css" />
+    <!-- =======================Font awesome===================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- ===========================popup on mobile=========================== -->
+    <div class="category-popup">
+      <i class="fas fa-grip-horizontal"></i>
+    </div>
+    <div class="mobile-category">
+      <div class="mobile-category-list">
+        <h5 class="categoryHeader">อิเล็กทรอนิกส์ <i class="fas fa-arrow-alt-circle-right"></i></h5>
+        <ul>
+          <li><a href="">โทรศัพท์มือคือ</a></li>
+          <li><a href="">แท็ปเล็ต</a></li>
+          <li><a href="">โน๊ตบุค</a></li>
+          <li><a href="">คอมตั้งโต๊ะ</a></li>
+          <li><a href="">กล้อง</a></li>
+          <li><a href="">เครื่องเกมคอนโซล</a></li>
+        </ul>
+      </div>
+      <div class="mobile-category-list">
+        <h5 class="categoryHeader">อุปกรณ์เสริม <i class="fas fa-arrow-alt-circle-right"></i></h5>
+        <ul >
+          <li><a href="">อุปกรณ์เสริมโทรศัพท์มือถือ</a></li>
+          <li><a href="">อุปกรณ์เสริมแท็ปเล็ต</a></li>
+          <li><a href="">อุปกรณ์เสริมโน๊ตบุค</a></li>
+          <li><a href="">อุปกรณ์เสริมคอมตั้งโต๊ะ</a></li>
+          <li><a href="">อุปกรณ์เสริมกล้อง</a></li>
+          <li><a href="">อุปกรณ์ฮาร์ดแวร์คอมพิวเตอร์</a></li>
+          <li><a href="">อุปกรณ์เสริมกล้อง</a></li>
+          <li><a href="">อุปกรณ์ฮาร์ดแวร์คอมพิวเตอร์</a></li>
+        </ul>
+      </div>
+      <div class="mobile-category-list">
+        <h5 class="categoryHeader">ผู้หญิง <i class="fas fa-arrow-alt-circle-right"></i></h5>
+        <ul>
+          <li><a href="">เสื้อผ้าผู้หญิง</a></li>
+          <li><a href="">กระโปรง</a></li>
+          <li><a href="">กางเกงผู้หญิง</a></li>
+          <li><a href="">กระโปรง</a></li>
+          <li><a href="">กระเป๋าผู้หญิง</a></li>
+          <li><a href="">เสื้อใน</a></li>
+          <li><a href="">กางเกงในผู้หญิง</a></li>
+        </ul>
+      </div>
+      <div class="mobile-category-list">
+        <h5 class="categoryHeader">ผู้ชาย <i class="fas fa-arrow-alt-circle-right"></i></h5>
+        <ul>
+          <li><a href="">เสื้อผู้ชาย</a></li>
+          <li><a href="">กางเกงผู้ชาย</a>.</a></li>
+          <li><a href="">รองเท้าผู้ชาย</a></a></li>
+          <li><a href="">กระเป๋าผู้ชาย</a></a></li>
+          <li><a href="">กางเกงใน</a></a></li>
+          <li><a href="">เสื้อกล้าม</a></a></li>
+        </ul>
+      </div>
+      <div class="mobile-category-list">
+        <h5 class="categoryHeader">กีฬา <i class="fas fa-arrow-alt-circle-right"></i></h5>
+        <ul>
+          <li><a href="">เสื้อกีฬา</a></li>
+          <li><a href="">กางเกงกีฬา</a></li>
+          <li><a href="">รองเท้ากีฬา</a></li>
+          <li><a href="">แบตมินตัน</a></li>
+          <li><a href="">อุปกรณ์กีฬา</a></li>
+        </ul>
+      </div>
+      <div class="mobile-category-list">
+        <h5 class="categoryHeader">แฟชั่น <i class="fas fa-arrow-alt-circle-right"></i></h5>
+        <ul >
+          <li><a href="">รองเท้า</a></li>
+          <li><a href="">ต่างหู</a></li>
+          <li><a href="">สร้อยคอ</a></li>
+          <li><a href="">เข็มขัด</a></li>
+          <li><a href="">แว่น</a></li>
+          <li><a href="">แว่นกันแดด</a></li>
+         
+        </ul>
+      </div>
+    </div>
+    <div class="filter-popup">
+      <i class="fas fa-filter"></i>
+    </div>
+    <header>
+      <!-- ===================Navigation bar (Navbar)======================== -->
+      <nav class="desktop-nav">
+        <div class="main-nav">
+          <ul class="nav-bar">
+            <li class="nav-links"><a href="index.html">หน้าหลัก</a></li>
+            <li class="nav-links"><a href="#">หมวดหมู่สินค้า</a></li>
+            <li class="nav-links"><a href="#">ติดต่อเรา</a></li>
+            <li class="nav-links"><a href="#">ร่วมขายสินค้า</a></li>
+          </ul>
+          <ul class="nav-bar">
+            <li class="nav-links"><a href="#">สมัครสมาชิก</a></li>
+            <li class="nav-links"><a href="#">เข้าสู่ระบบ</a></li>
+          </ul>
+        </div>
+        <!-- ===================Search======================== -->
+        <div class="search-nav">
+          <div id="logo">
+            Shop
+            <p>By ME</p>
+          </div>
+          <div class="search-bar">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="ค้นหาสินค้า"
+              autocomplete="off"
+            />
+            <i class="fa fa-search"></i>
+          </div>
+          <!-- ===================Category======================== -->
+          <div class="category">
+            <li class="categoryDrop"><a href="#">หมวดหมู่สินค้า</a></li>
+          </div>
+          <div class="category-dropdown ">
+            <div class="category-list">
+              <h5>อิเล็กทรอนิกส์</h5>
+              <ul>
+                <li><a href="">โทรศัพท์มือคือ</a></li>
+                <li><a href="">แท็ปเล็ต</a></li>
+                <li><a href="">โน๊ตบุค</a></li>
+                <li><a href="">คอมตั้งโต๊ะ</a></li>
+                <li><a href="">กล้อง</a></li>
+                <li><a href="">เครื่องเกมคอนโซล</a></li>
+              </ul>
+            </div>
+            <div class="category-list">
+              <h5>อุปกรณ์เสริม</h5>
+              <ul>
+                <li><a href="">อุปกรณ์เสริมโทรศัพท์มือถือ</a></li>
+                <li><a href="">อุปกรณ์เสริมแท็ปเล็ต</a></li>
+                <li><a href="">อุปกรณ์เสริมโน๊ตบุค</a></li>
+                <li><a href="">อุปกรณ์เสริมคอมตั้งโต๊ะ</a></li>
+                <li><a href="">อุปกรณ์เสริมกล้อง</a></li>
+                <li><a href="">อุปกรณ์ฮาร์ดแวร์คอมพิวเตอร์</a></li>
+                <li><a href="">อุปกรณ์เสริมกล้อง</a></li>
+                <li><a href="">อุปกรณ์ฮาร์ดแวร์คอมพิวเตอร์</a></li>
+              </ul>
+            </div>
+            <div class="category-list">
+              <h5>ผู้หญิง</h5>
+              <ul>
+                <li><a href="">เสื้อผ้าผู้หญิง</a></li>
+                <li><a href="">กระโปรง</a></li>
+                <li><a href="">กางเกงผู้หญิง</a></li>
+                <li><a href="">กระโปรง</a></li>
+                <li><a href="">กระเป๋าผู้หญิง</a></li>
+                <li><a href="">เสื้อใน</a></li>
+                <li><a href="">กางเกงในผู้หญิง</a></li>
+              </ul>
+            </div>
+            <div class="category-list">
+              <h5>ผู้ชาย</h5>
+              <ul>
+                <li><a href="">เสื้อผู้ชาย</a></li>
+                <li><a href="">กางเกงผู้ชาย</a>.</a></li>
+                <li><a href="">รองเท้าผู้ชาย</a></a></li>
+                <li><a href="">กระเป๋าผู้ชาย</a></a></li>
+                <li><a href="">กางเกงใน</a></a></li>
+                <li><a href="">เสื้อกล้าม</a></a></li>
+              </ul>
+            </div>
+            <div class="category-list">
+              <h5>กีฬา</h5>
+              <ul>
+                <li><a href="">เสื้อกีฬา</a></li>
+                <li><a href="">กางเกงกีฬา</a></li>
+                <li><a href="">รองเท้ากีฬา</a></li>
+                <li><a href="">แบตมินตัน</a></li>
+                <li><a href="">อุปกรณ์กีฬา</a></li>
+              </ul>
+            </div>
+            <div class="category-list">
+              <h5>แฟชั่น</h5>
+              <ul>
+                <li><a href="">รองเท้า</a></li>
+                <li><a href="">ต่างหู</a></li>
+                <li><a href="">สร้อยคอ</a></li>
+                <li><a href="">เข็มขัด</a></li>
+                <li><a href="">แว่น</a></li>
+                <li><a href="">แว่นกันแดด</a></li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- =========================Mobile nav======================= -->
+      <nav class="mobile-nav">
+        <div class="main-nav">
+          <div id="logo">
+            Shop
+            <p>By ME</p>
+          </div>
+          <div class="burger">
+            <div class="burger-line line1"></div>
+            <div class="burger-line line2"></div>
+            <div class="burger-line line3"></div>
+          </div>
+          <div class="mobile-menu ">
+            <div class="signup-section">
+              <ul>
+                <li><a href="#">สมัครสมาชิก</a></li>
+                <li><a href="#">เข้าสู่ระบบ</a></li>
+              </ul>
+            </div>
+            <div class="another-section">
+              <ul>
+                <li class="nav-links"><a href="index.html">หน้าหลัก</a></li>
+                <li class="nav-links"><a href="#">หมวดหมู่สินค้า</a></li>
+                <li class="nav-links"><a href="#">ติดต่อเรา</a></li>
+                <li class="nav-links"><a href="#">ร่วมขายสินค้า</a></li>
+                <li class="nav-links"><a href="#">ฝ่ายสนับสนุน</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="search-nav">
+          <div class="search-bar">
+            <input
+              type="text"
+              name="search"
+              id="mobilesearch"
+              placeholder="ค้นหาสินค้า"
+              autocomplete="off"
+            />
+            <i class="fa fa-search"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- ==============================main=========================== -->
+    <div class="banner">
+      <div class="banner-text">
+        <h1>Joy Us</h1>
+        <p>Come to join us. If you want to be one of our E-commerce</p>
+        <a href="#">Sign Up</a>
+      </div>
+    </div>
+    <main>
+      <!-- ===================Left side Filter======================== -->
+
+      <div class="filter-nav">
+        <h1>การคัดกรอง</h1>
+        <!-- ===================Filter 1======================== -->
+        <div class="filter">
+          <h2>ช่วงราคา</h2>
+          <div class="filter-price">
+            <div class="price-input">
+              <input
+                type="text"
+                maxlength="13"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                name="filter-price-max"
+                id="filter-price-max"
+                placeholder="น้อยที่สุด"
+              />
+              <span>&Rightarrow;</span>
+              <input
+                type="text"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                maxlength="13"
+                name="filter-price-min"
+                id="filter-price-min"
+                placeholder="มากที่สุด"
+              />
+            </div>
+            <input type="submit" value="ค้นหา" />
+          </div>
+        </div>
+        <!-- ===================Filter 2======================== -->
+        <div class="filter">
+          <h2>คะแนน</h2>
+          <div class="filter-rating">
+            <i class="fa fa-star fill"></i>
+            <i class="fa fa-star fill"></i>
+            <i class="fa fa-star fill"></i>
+            <i class="fa fa-star fill"></i>
+            <i class="fa fa-star fill"></i>
+            <span>5 ดาว</span>
+          </div>
+          <div class="filter-rating">
+            <i class="fa fa-star fill"></i>
+            <i class="fa fa-star fill"></i>
+            <i class="fa fa-star fill"></i>
+            <i class="fa fa-star fill"></i>
+            <i class="fa fa-star"></i>
+            <span>4 ดาวขึ้นไป</span>
+          </div>
+          <div class="filter-rating">
+            <i class="fa fa-star fill"></i>
+            <i class="fa fa-star fill"></i>
+            <i class="fa fa-star fill"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <span>3 ดาวขึ้นไป</span>
+          </div>
+          <div class="filter-rating">
+            <i class="fa fa-star fill"></i>
+            <i class="fa fa-star fill"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <span>2 ดาวขึ้นไป</span>
+          </div>
+          <div class="filter-rating">
+            <i class="fa fa-star fill"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <span>1 ดาวขึ้นไป</span>
+          </div>
+        </div>
+        <div class="filter">
+          <h2>ตามประเภทสินค้า</h2>
+          <div class="filter-typeproduct">
+            <div class="newproduct">
+              <input type="checkbox" name="newproduct" id="newproduct" />
+              <label for="newproduct">สินค้ามือหนึ่ง</label>
+            </div>
+            <div class="secondhand">
+              <input type="checkbox" name="secondhand" id="secondhand" />
+              <label for="secondhand">สินค้ามือหนึ่ง</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======================main content================ -->
+      <div class="main-product">
+        <div class="product-section">
+          <div class="product">
+            <!-- ========================card product======================== -->
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/product1.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  Shirt Screen Bookstore Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Eum, aperiam!
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>500</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/sportrunning.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  Sport Running Shoe Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, quia.
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>1360</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/product2.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  White Black Shoe Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, aliquam?
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>1580</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/product3.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  Pink street bag Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, ad.
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>3500</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/product4.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                 Sweater Shirt for Boy Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, aliquid!
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>2320</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/product5.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  Shirt Screen Bookstore Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Eum, aperiam!
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>299</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/product6.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  Shirt Screen Bookstore Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Eum, aperiam!
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>12000</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/product7.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  Shirt Screen Bookstore Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Eum, aperiam!
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>12300</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/product1.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  Shirt Screen Bookstore Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Eum, aperiam!
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>500</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/sportrunning.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  Sport Running Shoe Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, quia.
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>1360</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/product2.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  White Black Shoe Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, aliquam?
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>1580</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/product3.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  Pink street bag Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, ad.
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>3500</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/product4.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                 Sweater Shirt for Boy Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, aliquid!
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>2320</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/product5.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  Shirt Screen Bookstore Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Eum, aperiam!
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>299</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/product6.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  Shirt Screen Bookstore Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Eum, aperiam!
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>12000</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/product7.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  Shirt Screen Bookstore Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Eum, aperiam!
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>12300</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/product1.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  Shirt Screen Bookstore Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Eum, aperiam!
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>500</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/sportrunning.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  Sport Running Shoe Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, quia.
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>1360</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./images/product2.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <p class="shop">Orio Shop</p>
+                <p class="product-name">
+                  White Black Shoe Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, aliquam?
+                </p>
+                <p class="rating">
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star fill"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <div class="buy-section">
+                  <p class="price"><span class="currency">฿</span>1580</p>
+                  <button class="buy">
+                    <i class="fas fa-shopping-cart"></i>ADD
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="pagination">
+            <ul>
+              <li><</li>
+              <li class="pages active">1</li>
+              <li class="pages">2</li>
+              <li class="pages">3</li>
+              <li class="pages">4</li>
+              <li>></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

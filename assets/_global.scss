@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// color
+$background: rgb(23, 97, 131);
+$border: rgb(255, 255, 255);
+$hoverBackground: rgb(41, 182, 246);
+$subBackground: rgb(114, 207, 219);
+
+//background
+$bannerBackground: url("../images/banner.JPG");
+// flex
+@mixin flex($justify, $align, $direction) {
+  display: Flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+// global setting
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(104, 104, 104);
+}
