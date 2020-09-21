@@ -349,6 +349,7 @@
     z-index: 9;
   }
   .mobile-category {
+    -webkit-tap-highlight-color: transparent;
     display: block;
     position: fixed;
     transform: translateX(-100%);
